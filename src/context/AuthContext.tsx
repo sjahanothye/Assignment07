@@ -160,22 +160,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       setIsLoading(true);
 
-      // Call BetterAuth social sign-in
-      try {
-        await authClient.signIn.social({
-          provider: provider
-        });
-      } catch {
-        // Fallback demo social login
-      }
-
       const providerName = provider === "google" ? "Google ব্যবহারকারী" : "GitHub ব্যবহারকারী";
       const dummyUser: AuthUser = {
         id: `social_${provider}_${Date.now()}`,
         name: providerName,
         email: `${provider}_user@bazardor.com`,
         image: provider === "google"
-          ? "https://lh3.googleusercontent.com/a/default-user"
+          ? "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80"
           : "https://avatars.githubusercontent.com/u/9919?v=4",
         createdAt: new Date().toISOString()
       };
