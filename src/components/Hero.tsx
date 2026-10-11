@@ -17,19 +17,19 @@ export default function Hero() {
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
             
             {/* Eyebrow badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs sm:text-sm font-semibold tracking-wide border border-emerald-200 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs sm:text-sm font-semibold tracking-wide border border-emerald-200/80 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span>
               <span>দৈনিক নির্ভরযোগ্য বাজারদর মনিটরিং</span>
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading (Exact Figma) */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.2]">
-              আজকের <span className="text-emerald-600 underline decoration-emerald-300 decoration-wavy decoration-2">বাজার দর</span> জানুন সবার আগে
+              আজকের বাজারের দাম এক নজরে
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed">
-              প্রতিদিনের চাল, ডাল, তেল, শাকসবজি, মাছ ও মাংসসহ নিত্যপণ্যের সঠিক ও নির্ভরযোগ্য পাইকারি এবং খুচরা বাজারদর এক নজরে যাচাই করুন।
+            {/* Subtitle (Exact Figma) */}
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+              চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বাধিক এবং দামের পরিবর্তন এক জায়গায়।
             </p>
 
             {/* CTA Buttons */}
