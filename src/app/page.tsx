@@ -5,8 +5,6 @@ import { getProducts } from "@/lib/api";
 import { TrendingUp, TrendingDown, LayoutGrid } from "lucide-react";
 import HomeProductGrid from "@/components/HomeProductGrid";
 
-export const revalidate = 60;
-
 export default async function HomePage() {
   const products = await getProducts();
 
