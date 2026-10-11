@@ -6,7 +6,7 @@
 
 ## 🔗 গুরুত্বপূর্ণ লিংকসমূহ (Submission Links)
 
-- **Live Link:** [https://assignment07-bazardor.vercel.app](https://assignment07-bazardor.vercel.app) *(অথবা আপনার লাইভ ডেপ্লয়মেন্ট লিংক)*
+- **Live Link:** [https://assignment07-drab.vercel.app](https://assignment07-drab.vercel.app)
 - **GitHub Repository Link:** [https://github.com/sjahanothye/Assignment07](https://github.com/sjahanothye/Assignment07)
 
 ---
