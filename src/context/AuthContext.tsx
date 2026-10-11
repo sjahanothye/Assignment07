@@ -214,10 +214,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       // BetterAuth updateUser API
       try {
-        // @ts-expect-error - better-auth client updateUser method
-        if (authClient.updateUser) {
-          // @ts-expect-error - updateUser method
-          await authClient.updateUser({
+        const clientAny = authClient as unknown as { updateUser?: (data: { name: string }) => Promise<unknown> };
+        if (typeof clientAny.updateUser === "function") {
+          await clientAny.updateUser({
             name: newName.trim()
           });
         }

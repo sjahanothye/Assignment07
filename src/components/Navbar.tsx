@@ -36,7 +36,11 @@ export default function Navbar({ categories = DEFAULT_CATEGORIES }: NavbarProps)
   const pathname = usePathname();
   const { user, logout, loginDemoUser, isLoading } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const bengaliDate = getFormattedBengaliDate();
+  const [bengaliDate, setBengaliDate] = useState("রবিবার, ১১ অক্টোবর ২০২৬");
+
+  React.useEffect(() => {
+    setBengaliDate(getFormattedBengaliDate());
+  }, []);
 
   return (
     <header className="w-full bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
